@@ -2,7 +2,7 @@
 
 ### See ```Elevator_Report.pdf``` for extensive details on functionality, simulation results, and the broader implications for elevator scheduling.
 
-ElevatorSim.py is a discrete-event simulation of elevator behavior in an office building over the course of one workday. It is an agent-based simulation in which each agent is an occupant of the building whose elevator utilization is realistic and stochastic, modelled off of data collected by Kuusinen et al. (2011). Simulated elevators may use one of two commercially standard *scheduling algorithms*, which are algorithms that determine the elevator that services a passenger's request when they push a button in the hallway.
+ElevatorSim.py is a discrete-event simulation of elevator behavior in an office building over the course of one workday. It is an agent-based simulation in which each agent is an occupant of the building. Agents' elevator utilization is realistic and stochastic, modelled off of data collected by Kuusinen et al. (2011). Simulated elevators may use one of two commercially standard *scheduling algorithms*, which are algorithms that determine the elevator that services a passenger's request when they push a button in the hallway.
 
 To conduct a simulation, instantiate the ```Building``` class:
 ### ```Building(number_of_floors, number_of_elevators)```
