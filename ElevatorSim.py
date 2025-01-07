@@ -6,8 +6,6 @@ import pandas as pd
 import numpy as np
 
 #Constants
-NUMBER_OF_FLOORS = 5
-NON_LOBBY_FLOORS = [i for i in range(1, NUMBER_OF_FLOORS)]
 
 MEAN_TIME_BETWEEN_REQUESTS = 120
 
@@ -16,8 +14,6 @@ SIGMA_TIME_ON_SECONDARY_FLOOR = 60
 
 AVG_TIME_IN_SYSTEM = 240 # 4 hours
 SIGMA_TIME_IN_SYSTEM = 60
-
-NUM_ELEVATORS = 2
 
 def exponential(mean):
     return -mean*math.log(random.random())
@@ -470,7 +466,7 @@ class Building:
             #add initial elevator request to FEL
             self.fel.enqueue(person.generate_initial_request())
 
-    def run_elevator_alg(self, mult=1):
+    def run_conventional_alg(self, mult=1):
 
         self.initialize_system(mult)
 
